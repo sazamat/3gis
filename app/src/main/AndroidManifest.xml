@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.happyplaces">
 
+    <!--TODO (Step 4: Adding an permissions which is required to ask at runtime. )-->
+    <!--START-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--END-->
+
+
     <application
-        tools:node="replace"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +32,7 @@
 
         <activity
             android:name=".AddHappyPlaceActivity"
-            android:label="ADD Place "
+            android:label="ADD  PLACE"
             android:screenOrientation="portrait"
             android:theme="@style/CustomNoActionBarTheme"/>
     </application>
