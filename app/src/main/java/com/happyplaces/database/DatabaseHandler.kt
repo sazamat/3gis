@@ -137,8 +137,6 @@ class DatabaseHandler(context: Context) :
         return success
     }
 
-    // TODO (Step 5: Creating a function to delete the existing happy place detail.)
-    // START
     /**
      * Function to delete happy place details.
      */
@@ -150,5 +148,4 @@ class DatabaseHandler(context: Context) :
         db.close() // Closing database connection
         return success
     }
-    // END
 }
