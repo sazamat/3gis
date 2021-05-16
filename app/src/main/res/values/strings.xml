@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">Happy Places</string>
+    <string name="app_name">3gis</string>
 
-    <!--TODO (Step 2: Add the google api key which we will generated in the console after creating project. This we will use on later stage.)-->
-    <string name="google_maps_api_key">AIzaSyBGjGFMwtra-hnW8jW9-K2FMNVFFvMqgvM</string>
+    <string name="google_maps_api_key">AIzaSyA-Ew-EcB5r16uPcPLsva01uj3yrvPeJTw</string>
 
     <string name="edit_text_hint_title">Title</string>
     <string name="edit_text_hint_description">Description</string>
@@ -13,4 +12,9 @@
 
     <string name="note_text_no_happy_places_found_yet_kindly_add_one">No Happy Places Found Yet. Kindly add one.</string>
     <string name="image_content_description">image</string>
+
+    <!--TODO (Step 6: Added the String values for a button of Happy Place Detail Screen.)-->
+    <!--START-->
+    <string name="btn_text_view_on_map">VIEW ON MAP</string>
+    <!--END-->
 </resources>

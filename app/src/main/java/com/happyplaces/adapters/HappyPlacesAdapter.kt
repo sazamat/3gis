@@ -87,8 +87,6 @@ open class HappyPlacesAdapter(
         notifyItemChanged(position) // Notify any registered observers that the item at position has changed.
     }
 
-    // TODO (Step 4: Create a function to delete the happy place details which is inserted earlier from the local storage.)
-    // START
     /**
      * A function to delete the added happy place detail from the local storage.
      */
@@ -102,7 +100,6 @@ open class HappyPlacesAdapter(
             notifyItemRemoved(position)
         }
     }
-    // END
 
     /**
      * A function to bind the onclickListener.

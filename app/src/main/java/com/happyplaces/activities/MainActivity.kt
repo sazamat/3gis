@@ -105,21 +105,16 @@ class MainActivity : AppCompatActivity() {
         val editItemTouchHelper = ItemTouchHelper(editSwipeHandler)
         editItemTouchHelper.attachToRecyclerView(rv_happy_places_list)
 
-        // TODO(Step 3: Bind the delete feature class to recyclerview)
         val deleteSwipeHandler = object : SwipeToDeleteCallback(this) {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                // TODO (Step 6: Call the adapter function when it is swiped for delete)
-                // START
                 val adapter = rv_happy_places_list.adapter as HappyPlacesAdapter
                 adapter.removeAt(viewHolder.adapterPosition)
 
                 getHappyPlacesListFromLocalDB() // Gets the latest list from the local database after item being delete from it.
-                // END
             }
         }
         val deleteItemTouchHelper = ItemTouchHelper(deleteSwipeHandler)
         deleteItemTouchHelper.attachToRecyclerView(rv_happy_places_list)
-        // END
     }
 
     companion object {

@@ -28,7 +28,6 @@ class DatabaseHandler(context: Context) :
         private const val KEY_LONGITUDE = "longitude"
     }
 
-        
     override fun onCreate(db: SQLiteDatabase?) {
         //creating table with fields
         val CREATE_HAPPY_PLACE_TABLE = ("CREATE TABLE " + TABLE_HAPPY_PLACE + "("
