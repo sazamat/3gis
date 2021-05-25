@@ -74,8 +74,6 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
             onBackPressed()
         }
 
-        // TODO (Step 4: Initialize the places sdk if it is not initialized earlier.)
-        // START
         /**
          * Initialize the places sdk if it is not initialized earlier using the api key.
          */
@@ -85,7 +83,6 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
                     resources.getString(R.string.google_maps_api_key)
             )
         }
-        // END
 
         if (intent.hasExtra(MainActivity.EXTRA_PLACE_DETAILS)) {
             mHappyPlaceDetails =
@@ -125,10 +122,7 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
         et_date.setOnClickListener(this)
         tv_add_image.setOnClickListener(this)
         btn_save.setOnClickListener(this)
-        // TODO (Step 6: Set a click Listener to location edit text after making it focusable false.)
-        // START
         et_location.setOnClickListener(this)
-        // END
     }
 
     override fun onClick(v: View?) {
@@ -161,8 +155,6 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
                 pictureDialog.show()
             }
 
-            // TODO (Step 8: Add an onClick event on the location for place picker)
-            // START
             R.id.et_location -> {
                 try {
                     // These are the list of fields which we required is passed
@@ -179,7 +171,6 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
                     e.printStackTrace()
                 }
             }
-            // END
 
             R.id.btn_save -> {
 
@@ -283,8 +274,6 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
 
                 iv_place_image!!.setImageBitmap(thumbnail) // Set to the imageView.
             }
-            // TODO (Step 9: Receive the valid result as we required from the Place Picker.)
-            // START
             else if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {
 
                 val place: Place = Autocomplete.getPlaceFromIntent(data!!)
@@ -293,7 +282,6 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
                 mLatitude = place.latLng!!.latitude
                 mLongitude = place.latLng!!.longitude
             }
-        // END
         }
         else if (resultCode == Activity.RESULT_CANCELED) {
             Log.e("Cancelled", "Cancelled")
@@ -443,10 +431,7 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
         private const val GALLERY = 1
         private const val CAMERA = 2
         private const val IMAGE_DIRECTORY = "HappyPlacesImages"
-        // TODO(Step 7: Create a constant variable for place picker)
-        // START
         // A constant variable for place picker
         private const val PLACE_AUTOCOMPLETE_REQUEST_CODE = 3
-        // END
     }
 }

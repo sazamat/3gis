@@ -38,14 +38,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/CustomNoActionBarTheme"/>
 
-        <!--TODO (Step 2: Modify the param as required.)-->
-        <!--START-->
         <activity
             android:name=".activities.MapActivity"
             android:label="Happy Place on Map"
             android:screenOrientation="portrait"
             android:theme="@style/CustomNoActionBarTheme" />
-        <!--END-->
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

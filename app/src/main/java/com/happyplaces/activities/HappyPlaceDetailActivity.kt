@@ -42,13 +42,10 @@ class HappyPlaceDetailActivity : AppCompatActivity() {
             tv_location.text = happyPlaceDetailModel.location
         }
 
-        // TODO (Step 7: Add an click event for button view on map)
-        // START
         btn_view_on_map.setOnClickListener {
             val intent = Intent(this@HappyPlaceDetailActivity, MapActivity::class.java)
             intent.putExtra(MainActivity.EXTRA_PLACE_DETAILS, happyPlaceDetailModel)
             startActivity(intent)
         }
-        // END
     }
 }

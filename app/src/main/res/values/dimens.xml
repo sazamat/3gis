@@ -36,8 +36,6 @@
     <dimen name="detail_screen_location_marginTop">16dp</dimen>
     <dimen name="detail_screen_location_text_size">18sp</dimen>
 
-    <!--TODO (Step 5: Added the dimen values for a button of Happy Place Detail Screen.)-->
-    <!--START-->
     <dimen name="detail_screen_btn_view_on_map_marginStartEnd">8dp</dimen>
     <dimen name="detail_screen_btn_view_on_map_marginTop">16dp</dimen>
     <dimen name="detail_screen_btn_view_on_map_PaddingTopBottom">8dp</dimen>
